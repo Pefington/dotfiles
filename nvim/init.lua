@@ -1,1 +1,2 @@
-print("test")
+require('base')
+require('plugins')
