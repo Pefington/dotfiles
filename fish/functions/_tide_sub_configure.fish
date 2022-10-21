@@ -1,8 +1,8 @@
-set -g _tide_color_dark_blue 0087AF
-set -g _tide_color_dark_green 5FAF00
-set -g _tide_color_gold D7AF00
-set -g _tide_color_green 5FD700
-set -g _tide_color_light_blue 00AFFF
+set -g _tide_color_dark_blue 00BFFF
+set -g _tide_color_dark_green 38DF38
+set -g _tide_color_gold FFFF40
+set -g _tide_color_green 60FF60
+set -g _tide_color_light_blue 40FFFF
 
 # Create an empty fake function for each item
 for func in _fake(functions --all | string match --entire _tide_item)

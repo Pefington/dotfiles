@@ -11,7 +11,7 @@ tide_chruby_bg_color normal
 tide_chruby_color B31209
 tide_chruby_icon 
 tide_cmd_duration_bg_color normal
-tide_cmd_duration_color 87875F
+tide_cmd_duration_color $_tide_color_gold
 tide_cmd_duration_decimals 0
 tide_cmd_duration_icon
 tide_cmd_duration_threshold 3000
@@ -32,9 +32,9 @@ tide_git_bg_color normal
 tide_git_bg_color_unstable normal
 tide_git_bg_color_urgent normal
 tide_git_color_branch $_tide_color_green
-tide_git_color_conflicted FF0000
+tide_git_color_conflicted FF0080
 tide_git_color_dirty $_tide_color_gold
-tide_git_color_operation FF0000
+tide_git_color_operation FF0080
 tide_git_color_staged $_tide_color_gold
 tide_git_color_stash $_tide_color_green
 tide_git_color_untracked $_tide_color_light_blue
@@ -111,7 +111,7 @@ tide_terraform_bg_color normal
 tide_terraform_color 844FBA
 tide_terraform_icon
 tide_time_bg_color normal
-tide_time_color 5F8787
+tide_time_color $_tide_color_dark_blue
 tide_time_format %T
 tide_toolbox_bg_color normal
 tide_toolbox_color 613583
