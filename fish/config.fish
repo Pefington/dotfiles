@@ -4,8 +4,6 @@ end
 
 rvm default
 
-fish_ssh_agent
-
 # pnpm
 set -gx PNPM_HOME "/home/pef/.local/share/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH

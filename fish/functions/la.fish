@@ -1,3 +1,3 @@
-function la --wraps=ls --wraps='exa -l -a' --description 'alias la exa -l -a'
-  exa -l -a $argv; 
+function la --wraps=ls --wraps='exa -l -a' --wraps='exa -l -a --git' --description 'alias la exa -l -a --git'
+  exa -l -a --git $argv; 
 end

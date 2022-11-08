@@ -1,3 +1,3 @@
-function lli --wraps='exa -l -i' --wraps='exa -l -icons' --wraps='exa -l --icons' --description 'alias lli exa -l --icons'
-  exa -l --icons $argv; 
+function lli --wraps='exa -l -i' --wraps='exa -l -icons' --wraps='exa -l --icons' --wraps='exa -l --icons --git' --description 'alias lli exa -l --icons --git'
+  exa -l --icons --git $argv; 
 end
