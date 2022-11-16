@@ -45,3 +45,12 @@ set -g fish_pager_color_progress $comment
 set -g fish_pager_color_prefix $cyan
 set -g fish_pager_color_completion $foreground
 set -g fish_pager_color_description $comment
+
+# Less Colors
+set -x LESS_TERMCAP_mb (printf "33[01;31m")
+set -x LESS_TERMCAP_md (printf "33[01;31m")
+set -x LESS_TERMCAP_me (printf "33[0m")
+set -x LESS_TERMCAP_se (printf "33[0m")
+set -x LESS_TERMCAP_so (printf "33[01;44;33m")
+set -x LESS_TERMCAP_ue (printf "33[0m")
+set -x LESS_TERMCAP_us (printf "33[01;32m")
