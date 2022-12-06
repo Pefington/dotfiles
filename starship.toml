@@ -1,0 +1,160 @@
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$cmd_duration\
+$line_break\
+$python\
+$character
+"""
+
+right_format = """
+$aws\
+$buf\
+$c\
+$conda\
+$dart\
+$docker_context\
+$elixir\
+$elm\
+$golang\
+$haskell\
+$hg_branch\
+$java\
+$julia\
+$lua\
+$memory_usage\
+$meson\
+$nim\
+$nix_shell\
+$nodejs\
+$package\
+$python\
+$rlang\
+$ruby\
+$rust\
+$scala\
+$spack\
+$jobs\
+$time
+"""
+
+[directory]
+style = "blue"
+
+[character]
+success_symbol = "[❯](#00ff00)"
+error_symbol = "[❯](#ff0000)"
+vimcmd_symbol = "[❮](#ff00ff)"
+
+[git_branch]
+format = "[$branch]($style)"
+style = "#ff00ff"
+
+[git_status]
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](#ffaaff) ($ahead_behind$stashed)]($style)"
+style = "#ffff00"
+conflicted = "​"
+untracked = "​"
+modified = "​"
+staged = "​"
+renamed = "​"
+deleted = "​"
+stashed = "≡"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "#ff0000"
+
+[cmd_duration]
+format = "[$duration]($style) "
+style = "yellow"
+
+# [python]
+# format = "[$virtualenv]($style) "
+# style = "bright-black"
+
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[meson]
+symbol = "喝 "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+format = "[$symbol($version )]($style)"
+symbol = " "
+style = "bold green"
+
+[package]
+symbol = " "
+
+[python]
+symbol = " "
+
+[rlang]
+symbol = "ﳒ "
+
+[ruby]
+symbol = " "
+format = "[$symbol($version )]($style)"
+style = "bold red"
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[spack]
+symbol = "🅢 "
