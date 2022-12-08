@@ -5,13 +5,13 @@ $directory\
 $git_branch\
 $git_state\
 $git_status\
-$cmd_duration\
 $line_break\
-$python\
 $character
 """
 
 right_format = """
+$status\
+$cmd_duration\
 $aws\
 $buf\
 $c\
@@ -43,6 +43,7 @@ $time
 """
 
 [directory]
+truncate_to_repo = false
 style = "blue"
 
 [character]
@@ -72,10 +73,6 @@ style = "#ff0000"
 [cmd_duration]
 format = "[$duration]($style) "
 style = "yellow"
-
-# [python]
-# format = "[$virtualenv]($style) "
-# style = "bright-black"
 
 [aws]
 symbol = "  "
